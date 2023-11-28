@@ -1,0 +1,61 @@
+version: "3.1"
+
+stories:
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: places_info
+  steps:
+  - intent: placesinfo
+  - action: utter_placesinfo
+
+
+
+
+- story: location
+  steps:
+  - intent: location
+  - action: utter_location
+
+- story: categories
+  steps:
+  - intent: categories
+  - action: utter_categories
+
+- story: recommendation
+  steps:
+  - intent: recommendation
+  - action: utter_recommendation
+
+- story: mood_happy
+  steps:
+  - intent: mood_happy
+  - action: utter_mood_happy
+
+- story: mood_unhappy
+  steps:
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+
+- story: mood_sad
+  steps:
+  - intent: mood_sad
+  - action: utter_mood_sad
+
+- story: bot_challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+
+- story: happy
+  steps:
+  - intent: happy
+  - action: utter_happy
+

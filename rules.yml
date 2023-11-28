@@ -1,0 +1,60 @@
+version: "3.1"
+
+rules:
+- rule: Handle greet intent
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Handle goodbye intent
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Handle placesinfo intent
+  steps:
+  - intent: placesinfo
+  - action: utter_placesinfo
+
+
+
+
+- rule: Handle location intent
+  steps:
+  - intent: location
+  - action: utter_location
+
+- rule: Handle categories intent
+  steps:
+  - intent: categories
+  - action: utter_categories
+
+- rule: Handle recommendation intent
+  steps:
+  - intent: recommendation
+  - action: utter_recommendation
+
+- rule: Handle mood_happy intent
+  steps:
+  - intent: mood_happy
+  - action: utter_mood_happy
+
+- rule: Handle mood_unhappy intent
+  steps:
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+
+- rule: Handle mood_sad intent
+  steps:
+  - intent: mood_sad
+  - action: utter_mood_sad
+
+- rule: Handle bot_challenge intent
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+
+- rule: Handle happy intent
+  steps:
+  - intent: happy
+  - action: utter_happy

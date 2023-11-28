@@ -1,0 +1,836 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - greetings
+    - good morning
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - goodbye
+    - bye
+    - see you later
+    - farewell
+    - take care
+    - thanks
+
+- intent: placesinfo
+  examples: |
+    - What's the story behind Thalley Valley?
+    - Can you tell me about the history of Tashkurgan in China?
+    - Describe the cultural significance of Khunjerab Pass.
+    - Share interesting facts about Karimabad.
+    - What makes Shigar Fort a must-visit historical site?
+    - Tell me about the annual polo tournament at Shandur Top.
+    - What's the best time to visit Naltar Valley?
+    - Explain the significance of Sheosar Lake in Deosai National Park.
+    - Describe the architecture of Baltit Fort in Karimabad.
+    - Share legends or myths associated with Fairy Meadows.
+    - What wildlife can be found in Deosai National Park?
+    - Tell me about the traditional cuisine of Hunza Valley.
+    - Describe the geological formation of Passu Cones.
+    - Share travel tips for visiting Attabad Lake.
+    - What activities are available at Shangrila Resort in Skardu?
+    - Explain the ecological importance of Hunza Valley.
+    - Describe the restoration efforts at Baltit Fort.
+    - Share safety tips for trekking to K2 Base Camp.
+    - Tell me about the nomadic communities in Boroghil Valley.
+    - What's the best way to experience the tranquility of Rawalakot?
+    - Share local folklore associated with Rama Lake.
+    - Describe the flora and fauna of Gupis Valley.
+    - What cultural events are celebrated in Nagar Valley?
+    - Explain the significance of Shangrila Lake in Skardu.
+    - Share the traditional fishing methods in Borith Lake.
+    - What challenges do trekkers face at K2 Base Camp?
+    - Describe the traditional architecture of Kalash Valley.
+    - Share the cultural practices of the Kalash people.
+    - What's the best season to visit Barah Valley?
+    - Tell me about the biodiversity of Keris Valley.
+    -  Describe the historical events related to Aastana Mir Mukhtar Keris.
+    - Share the legends associated with Yabgo palace Keris.
+    - What activities can visitors enjoy at Jerba So Keris?
+    - Explain the agricultural practices at Khashal Agri Tourism Park Ghowari.
+    - Share the geological significance of Dongsa Rock View Point Kuro.
+    - What's the best time to visit Balghar Ranga?
+    - Tell me about the conservation efforts for Crystal Lake Soga.
+    - Describe the local dishes made with Saling Spangtoq (Trout Fish).
+    - What role does Chaqchan Mosque Khaplu play in the community?
+    - Share stories about the rulers who lived in Yabgo Palace Khaplu.
+    - What cultural events take place in Thoqsi Khar Khaplu?
+    - Describe the traditional festivities in Haldi Coneas.
+    - What's the connection between Hushe Valley and K2 mountain range?
+    - Share the experiences of mountaineers in Machulu Valley.
+    - Explain the ecological impact of Mashbrum View Point.
+    - What challenges do visitors face at K2 View Point Machulo La?
+    - Describe the geological features around Khamush Waterfall.
+    - Share safety tips for Khamush Waterfall Trail.
+    - What species inhabit the surroundings of Khamush Waterfall Pool?
+    - Explain the cultural significance of The Shigar View Point.
+    - Describe the legends surrounding The Blind Lake Shigar.
+    - Share the history of The River of Shigar.
+    - What architectural styles are present in Shigar Fort?
+    - Explain the cultural practices associated with The Ambrique Mosque Shigar.
+    - Describe the apple varieties found in Hashupi Bagh Shigar.
+    - What ecological role do Baltoro Glaciers play?
+    - Share the experiences of climbers at K2 Base Camp.
+    - What makes Balghar Broq a unique grassland?
+    - Tell me about the hidden gems of Thalley Valley.
+    - Tell me about Rakaposhi
+    - What can you share about Khunjerab Pass?
+    - Describe Karimabad
+    - What's special about Skardu?
+    - Share information on Shigar Fort
+    - Tell me more about Tashkurgan in China
+    - What's interesting about Shandur Top?
+    - Give details about Naltar Valley
+    - Share insights on Sheosar Lake
+    - Tell me about Khaplu town
+    - What's unique about Nanga Parbat?
+    - Describe Kachura Lake
+    - Tell me about Passu Cones
+    - Describe Shangrila Resort
+    - What's special about Attabad Lake?
+    - Share information on Hunza Valley
+    - Tell me about Baltit Fort
+    - Describe Fairy Meadows
+    - What can you tell me about Satpara Lake?
+    - Share insights on Deosai National Park
+    - Tell me about Phander Valley
+    - Describe Rawalakot
+    - What's special about Rama Lake?
+    - Tell me about Gupis Valley
+    - Share information on Nagar Valley
+    - Tell me about Shangrila Lake
+    - Describe Borith Lake
+    - Share insights on K2 Base Camp
+    - Tell me about Bara Pani
+    - Describe Karambar Lake
+    - What's unique about Boroghil Valley?
+    - Share information on Thalley Valley
+    - Tell me about Garam Chashma
+    - Describe Chillinji Pass
+    - What's special about Hoper Glacier?
+    - Tell me about Hussaini Bridge
+    - Share insights on Kalash Valley
+    - Describe Broghil Valley
+    - Tell me about Chitral
+    - What can you share about Shandur Polo Ground?
+    - Describe Chashme Shahi
+    - Tell me about Thakot Bridge
+    - Share information on Gilgit Serena Hotel
+    - Tell me about Fort of Shalman
+    - Describe Shandur Lake
+    - What's special about Shandur Pass?
+    - Tell me about Kalash Festival
+    - Describe Rumbur Valley
+    - What can you share about Bumburet Valley?
+    - Tell me about Barah Valley
+    - Describe Keris Valley View Point
+    - Share insights on Aastana Mir Mukhtar Keris (Tomb)
+    - Tell me about Yabgo palace Keris
+    - Describe Jerba So Keris (Lake)
+    - What's special about Khashal Agri Tourism Park Ghowari?
+    - Tell me about Dongsa Rock View Point Kuro
+    - Share information on Balghar Ranga
+    - Tell me about Crystal Lake Soga
+    - Describe Saling Spangtoq (Trout Fish)
+    - What can you share about Chaqchan Mosque Khaplu?
+    - Describe Yabgo Palace Khaplu (Sereena Palace)
+    - Share insights on Thoqsi Khar Khaplu
+    - Tell me about Haldi Coneas
+    - Describe Hushe Valley (K2 Gateway)
+    - What's special about Machulu Valley?
+    - Tell me about Mashbrum View Point
+    - Describe Saling Spangtoq (Trout Fish) in Soga Valley
+    - Share information on Chaqchan Mosque Khaplu
+    - Tell me about Yabgo Palace Khaplu (Sereena Palace)
+    - Describe Thoqsi Khar Khaplu
+    - What can you share about Haldi Coneas?
+    - Tell me about Hushe Valley (K2 Gateway)
+    - Describe Machulu Valley
+    - Share insights on Mashbrum View Point
+    - Tell me about K2 View Point Machulo La
+    - Describe Khamush Waterfall
+    - What's special about Khamush Waterfall Trail?
+    - Tell me about Khamush Waterfall Pool
+    - Share information on The Shigar View Point
+    - Tell me about The Blind Lake Shigar
+    - Describe The River of Shigar
+    - What can you share about Shigar Fort, The Palace of Rocks?
+    - Tell me about The Ambrique Mosque Shigar
+    - Describe Hashupi Bagh Shigar, The Apple Garden
+    - Share insights on Baltoro Glaciers
+    - Tell me about K2 Base Camp
+    - What's special about Balghar Broq, a beautiful grassland?
+    - Tell me about Thalley Valley
+- intent: categories
+  examples: |
+    - What are the different adventure categories in Gilgit-Baltistan?
+    - Tell me about the cultural categories to explore in the region.
+    - What are the outdoor activity categories available for tourists?
+    - Explain the types of historical categories in Gilgit-Baltistan.
+    - Share information on the religious categories in the area.
+    - Tell me about the wildlife categories in Gilgit-Baltistan.
+    - What adventure sports categories are popular among tourists?
+    - Explain the different cultural event categories in the region.
+    - Tell me about the various outdoor recreation categories.
+    - Share information on the historical sites and monuments categories.
+    - What are the religious festivals and events categories?
+    - Tell me about the wildlife sanctuaries and reserves categories.
+    - Explain the categories of adventure treks in the region.
+    - Share information on the cultural festivals and celebrations categories.
+    - What are the different categories of outdoor adventures?
+    - Tell me about the historical landmarks and categories.
+    - Share information on the religious practices and categories.
+    - What wildlife species and categories can be found in the region?
+    - Explain the categories of adventure tours available.
+    - Tell me about the cultural heritage and categories.
+    - Share information on the outdoor sports and categories.
+    - What are the historical events and categories in Gilgit-Baltistan?
+    - Explain the religious places and categories in the area.
+    - Tell me about the wildlife conservation and categories.
+    - Share information on the adventure activities and categories.
+    - What cultural attractions and categories are there?
+    - Tell me about the outdoor recreation categories for families.
+    - Explain the historical facts and categories of interest.
+    - Share information on the religious traditions and categories.
+    - What wildlife conservation efforts and categories exist?
+    - Explain the categories of adventure travel experiences.
+    - Tell me about the cultural diversity and categories.
+    - Share information on the outdoor adventure sports categories.
+    - What historical figures and categories are notable in the region?
+    - Explain the religious rituals and categories.
+    - Tell me about the wildlife photography categories.
+    - Share information on the adventure destinations and categories.
+    - What cultural practices and categories are unique to the region?
+    - Explain the outdoor activities and adventure categories.
+    - Tell me about the historical periods and categories.
+    - Share information on the religious beliefs and categories.
+    - What wildlife viewing categories are popular among tourists?
+    - Explain the adventure trips and categories available.
+    - Tell me about the cultural traditions and categories.
+    - Share information on the outdoor recreation areas and categories.
+    - What historical sites and categories are must-visit?
+    - Explain the religious customs and categories.
+    - Tell me about the wildlife habitats and categories.
+    - Share information on the adventure travel packages and categories.
+    - What cultural events and categories are celebrated in the region?
+    - Explain the outdoor adventure activities and categories.
+    - Tell me about the historical places and categories.
+    - Share information on the religious practices and categories.
+    - What wildlife species and categories can be observed?
+    - Explain the adventure tourism and categories.
+    - Tell me about the cultural festivals and categories.
+    - Share information on the outdoor adventure sports categories.
+    - What historical landmarks and categories are significant?
+    - Explain the religious festivals and categories.
+    - Tell me about the wildlife conservation categories.
+    - Share information on the adventure trekking categories.
+    - What cultural heritage and categories can be explored?
+    - Explain the outdoor sports and adventure categories.
+    - Tell me about the historical events and categories.
+    - Share information on the religious places and categories.
+    - What wildlife species and categories are protected?
+    - Explain the adventure travel experiences and categories.
+    - Tell me about the cultural diversity and categories.
+    - Share information on the outdoor adventure sports categories.
+    - What historical figures and categories are notable?
+    - Explain the religious rituals and categories.
+    - Tell me about the wildlife photography categories.
+    - Share information on the adventure destinations and categories.
+    - What cultural practices and categories are unique?
+    - Explain the outdoor activities and adventure categories.
+    - Tell me about the historical periods and categories.
+    - Share information on the religious beliefs and categories.
+    - What wildlife viewing categories are popular?
+    - Explain the adventure trips and categories available.
+    - Tell me about the cultural traditions and categories.
+    - Share information on the outdoor recreation areas and categories.
+    - What historical sites and categories are must-visit?
+    - Explain the religious customs and categories.
+    - Tell me about the wildlife habitats and categories.
+    - Share information on the adventure travel packages and categories.
+    - What cultural events and categories are celebrated?
+    - Explain the outdoor adventure activities and categories.
+    - Tell me about the historical places and categories.
+    - Share information on the religious practices and categories.
+    - What wildlife species and categories can be observed?
+    - Explain the adventure tourism and categories.
+    - Tell me about the cultural festivals and categories.
+    - Share information on the outdoor adventure sports categories.
+    - What historical landmarks and categories are significant?
+    - Explain the religious festivals and categories.
+    - Tell me about the wildlife conservation categories.
+    - Share information on the adventure trekking categories.
+    - What cultural heritage and categories can be explored?
+    - Explain the outdoor sports and adventure categories.
+    - Tell me about the historical events and categories.
+    - Share information on the religious places and categories.
+    - What wildlife species and categories are protected?
+    - Explain the adventure travel experiences and categories.
+    - Tell me about the cultural diversity and categories.
+    - Share information on the outdoor adventure sports categories.
+    - What historical figures and categories are notable?
+    - Explain the religious rituals and categories.
+    - Tell me about the wildlife photography categories.
+    - Share information on the adventure destinations and categories.
+    - What cultural practices and categories are unique?
+    - Explain the outdoor activities and adventure categories.
+    - Tell me about the historical periods and categories.
+    - Share information on the religious beliefs and categories.
+    - What wildlife viewing categories are popular?
+    - Explain the adventure trips and categories available.
+    - Tell me about the cultural traditions and categories.
+    - Share information on the outdoor recreation areas and categories.
+    - What historical sites and categories are must-visit?
+    - Explain the religious customs and categories.
+    - Tell me about the wildlife habitats and categories.
+    - Share information on the adventure travel packages and categories.
+    - What cultural events and categories are celebrated?
+    - Explain the outdoor adventure activities and categories.
+    - Tell me about the historical places and categories.
+    - Share information on the religious practices and categories.
+    - What wildlife species and categories can be observed?
+    - Explain the adventure tourism and categories.
+    - Tell me about the cultural festivals and categories.
+    - Share information on the outdoor adventure sports categories.
+    - What historical landmarks and categories are significant?
+    - Explain the religious festivals and categories.
+    - Tell me about the wildlife conservation categories.
+    - Share information on the adventure trekking categories.
+    - What cultural heritage and categories can be explored?
+    - Explain the outdoor sports and adventure categories.
+    - Tell me about the historical events and categories.
+    - Share information on the religious places and categories.
+    - What wildlife species and categories are protected?
+    - Explain the adventure travel experiences and categories.
+    - Tell me about the cultural diversity and categories.
+    - Share information on the outdoor adventure sports categories.
+    - What historical figures and categories are notable?
+    - Explain the religious rituals and categories.
+    - Tell me about the wildlife photography categories.
+    - Share information on the adventure destinations and categories.
+    - What cultural practices and categories are unique?
+    - Explain the outdoor activities and adventure categories.
+    - Tell me about the historical periods and categories.
+    - Share information on the religious beliefs and categories.
+    - What wildlife viewing categories are popular?
+    - Explain the adventure trips and categories available.
+    - Tell me about the cultural traditions and categories.
+    - Share information on the outdoor recreation areas and categories.
+    - What historical sites and categories are must-visit?
+    - Explain the religious customs and categories.
+    - Tell me about the wildlife habitats and categories.
+    - Share information on the adventure travel packages and categories.
+    - What cultural events and categories are celebrated?
+    - Explain the outdoor adventure activities and categories.
+    - Tell me about the historical places and categories.
+    - Share information on the religious practices and categories.
+    - What wildlife species and categories can be observed?
+    - Explain the adventure tourism and categories.
+    - Tell me about the cultural festivals and categories.
+    - Share information on the outdoor adventure sports categories.
+    - What historical landmarks and categories are significant?
+    - Explain the religious festivals and categories.
+    - Tell me about the wildlife conservation categories.
+    - Share information on the adventure trekking categories.
+    - What cultural heritage and categories can be explored?
+    - Explain the outdoor sports and adventure categories.
+    - Tell me about the historical events and categories.
+    - Share information on the religious places and categories.
+    - What wildlife species and categories are protected?
+    - Explain the adventure travel experiences and categories.
+    - Tell me about the cultural diversity and categories.
+    - Share information on the outdoor adventure sports categories.
+    - What historical figures and categories are notable?
+    - Explain the religious rituals and categories.
+    - Tell me about the wildlife photography categories.
+    - Share information on the adventure destinations and categories.
+    - What cultural practices and categories are unique?
+    - Explain the outdoor activities and adventure categories.
+    - Tell me about the historical periods and categories.
+    - Share information on the religious beliefs and categories.
+    - What wildlife viewing categories are popular?
+    - Explain the adventure trips and categories available.
+    - Tell me about the cultural traditions and categories.
+    - Share information on the outdoor recreation areas and categories.
+    - What historical sites and categories are must-visit?
+    - Explain the religious customs and categories.
+    - Tell me about the wildlife habitats and categories.
+    - Share information on the adventure travel packages and categories.
+    - What cultural events and categories are celebrated?
+    - Explain the outdoor adventure activities and categories.
+    - Tell me about the historical places and categories.
+    - Share information on the religious practices and categories.
+    - What wildlife species and categories can be observed?
+    - Explain the adventure tourism and categories.
+    - Tell me about the cultural festivals and categories.
+    - Share information on the outdoor adventure sports categories.
+    - What historical landmarks and categories are significant?
+    - Explain the religious festivals and categories.
+    - Tell me about the wildlife conservation categories.
+    - Share information on the adventure trekking categories.
+    - What cultural heritage and categories can be explored?
+    - Explain the outdoor sports and adventure categories.
+    - Tell me about the historical events and categories.
+    - Share information on the religious places and categories.
+    - What wildlife species and categories are protected?
+    - Explain the adventure travel experiences and categories.
+    - Tell me about the cultural diversity and categories.
+    - Share information on the outdoor adventure sports categories.
+    - What historical figures and categories are notable?
+    - Explain the religious rituals and categories.
+    - Tell me about the wildlife photography categories.
+    - Share information on the adventure destinations and categories.
+    - What cultural practices and categories are unique?
+    - Explain the outdoor activities and adventure categories.
+    - Tell me about the historical periods and categories.
+    - Share information on the religious beliefs and categories.
+    - What wildlife viewing categories are popular?
+    - Explain the adventure trips and categories available.
+    - Tell me about the cultural traditions and categories.
+    - Share information on the outdoor recreation areas and categories.
+    - What historical sites and categories are must-visit?
+    - Explain the religious customs and categories.
+    - Tell me about the wildlife habitats and categories.
+    - Share information on the adventure travel packages and categories.
+    - What cultural events and categories are celebrated?
+    - Explain the outdoor adventure activities and categories.
+    - Tell me about the historical places and categories.
+    - Share information on the religious practices and categories.
+    - What wildlife species and categories can be observed?
+    - Explain the adventure tourism and categories.
+    - Tell me about the cultural festivals and categories.
+    - Share information on the outdoor adventure sports categories.
+    - What historical landmarks and categories are significant?
+    - Explain the religious festivals and categories.
+    - Tell me about the wildlife conservation categories.
+    - Share information on the adventure trekking categories.
+    - What cultural heritage and categories can be explored?
+    - Explain the outdoor sports and adventure categories.
+    - Tell me about the historical events and categories.
+    - Share information on the religious places and categories.
+    - What wildlife species and categories are protected?
+    - Explain the adventure travel experiences and categories.
+    - Tell me about the cultural diversity and categories.
+    - Share information on the outdoor adventure sports categories.
+    - What historical figures and categories are notable?
+    - Explain the religious rituals and categories.
+    - Tell me about the wildlife photography categories.
+    - Share information on the adventure destinations and categories.
+    - What cultural practices and categories are unique?
+    - Explain the outdoor activities and adventure categories.
+    - Tell me about the historical periods and categories.
+    - Share information on the religious beliefs and categories.
+    - What wildlife viewing categories are popular?
+    - Explain the adventure trips and categories available.
+    - Tell me about the cultural traditions and categories.
+    - Share information on the outdoor recreation areas and categories.
+    - What historical sites and categories are must-visit?
+    - Explain the religious customs and categories.
+    - Tell me about the wildlife habitats and categories.
+    - Share information on the adventure travel packages and categories.
+    - What cultural events and categories are celebrated?
+    - Explain the outdoor adventure activities and categories.
+    - Tell me about the historical places and categories.
+    - Share information on the religious practices and categories.
+    - What wildlife species and categories can be observed?
+    - Explain the adventure tourism and categories.
+    - Tell me about the cultural festivals and categories.
+    - Share information on the outdoor adventure sports categories.
+    - What historical landmarks and categories are significant?
+    - Explain the religious festivals and categories.
+    - Tell me about the wildlife conservation categories.
+    - Share information on the adventure trekking categories.
+    - What cultural heritage and categories can be explored?
+    - Explain the outdoor sports and adventure categories.
+    - Tell me about the historical events and categories.
+    - Share information on the religious places and categories.
+    - What wildlife species and categories are protected?
+    - Explain the adventure travel experiences and categories.
+    - Tell me about the cultural diversity and categories.
+    - Share information on the outdoor adventure sports categories
+- intent: location
+  examples: |
+    - Where is Shangrila Resort located in Gilgit-Baltistan?
+    - Tell me the location of Fairy Meadows.
+    - What's the address for the Skardu Airport?
+    - Where can I find Naltar Valley on the map?
+    - Provide the location of Khunjerab Pass.
+    - What's the geographical location of Attabad Lake?
+    - Where is Satpara Lake situated in Gilgit-Baltistan?
+    - Can you give me directions to Shigar Fort?
+    - Tell me the location of Sheesh Mahal in Skardu.
+    - Where can I find Deosai National Park on the map?
+    - Provide the address for Husseini Suspension Bridge.
+    - What's the geographical location of Rakaposhi Base Camp?
+    - Where is Shigar River Retreat located?
+    - Tell me the location of Karakoram International University.
+    - What's the address for Baltit Fort in Hunza?
+    - Where can I find the Singal Valley on the map?
+    - Provide the location of K2 in Gilgit-Baltistan.
+    - What's the geographical location of Shangrila Resort in Skardu?
+    - Where is Upper Kachura Lake situated?
+    - Can you give me directions to Karakoram Highway?
+    - Tell me the location of Phunder Valley in Ghizer.
+    - Where can I find the Satpara Lake Resort on the map?
+    - Provide the address for Shigar Fort Residence.
+    - What's the geographical location of Sheosar Lake?
+    - Where is Skardu Airport situated in Gilgit-Baltistan?
+    - Tell me the location of the Old Silk Route.
+    - What's the address for Manthal Buddha Rock?
+    - Where can I find Turtuk Village on the map?
+    - Provide the location of Naltar Valley Ski Resort.
+    - What's the geographical location of Skardu City?
+    - Where is K2 View Point located?
+    - Can you give me directions to Baltit Fort in Hunza?
+    - Tell me the location of Hopper Glacier.
+    - Where can I find the Shigar River on the map?
+    - Provide the address for the Siachen Base Camp.
+    - What's the geographical location of Passu Cones?
+    - Where is Khaplu Palace situated in Gilgit-Baltistan?
+    - Tell me the location of the Katpana Desert.
+    - What's the address for Karakoram Lodge in Skardu?
+    - Where can I find the Shigar Fort Mosque on the map?
+    - Provide the location of Shangrila Resort in Skardu.
+    - What's the geographical location of Fairy Meadows?
+    - Where is Skardu Airport located in Gilgit-Baltistan?
+    - Tell me the location of the Blind Lake in Shigar.
+    - What's the address for the Shigar River Retreat?
+    - Where can I find the Skardu City Park on the map?
+    - Provide the location of the Khunjerab Pass.
+    - What's the geographical location of Deosai National Park?
+    - Where is the Satpara Lake Resort situated?
+    - Can you give me directions to K2 Base Camp?
+    - Tell me the location of Shigar Fort Residence in Skardu.
+    - What's the address for the Phunder Valley?
+    - Where can I find the Sheosar Lake on the map?
+    - Provide the location of Skardu City in Gilgit-Baltistan.
+    - What's the geographical location of the Old Silk Route?
+    - Where is Manthal Buddha Rock located?
+    - Tell me the location of the Turtuk Village in Baltistan.
+    - What's the address for Naltar Valley Ski Resort?
+    - Where can I find the Skardu Airport in Gilgit-Baltistan?
+    - Provide the location of the Baltit Fort in Hunza.
+    - What's the geographical location of Hopper Glacier?
+    - Where is the Shigar River situated?
+    - Can you give me directions to the Siachen Base Camp?
+    - Tell me the location of Passu Cones in Hunza.
+    - What's the address for Khaplu Palace?
+    - Where can I find the Katpana Desert on the map?
+    - Provide the location of Karakoram Lodge in Skardu.
+    - What's the geographical location of the Shigar Fort Mosque?
+    - Where is Shangrila Resort located in Skardu?
+    - Tell me the location of Fairy Meadows.
+    - What's the address for the Skardu Airport?
+    - Where can I find Naltar Valley on the map?
+    - Provide the location of Khunjerab Pass.
+    - What's the geographical location of Attabad Lake?
+    - Where is Satpara Lake situated in Gilgit-Baltistan?
+    - Can you give me directions to Shigar Fort?
+    - Tell me the location of Sheesh Mahal in Skardu.
+    - Where can I find Deosai National Park on the map?
+    - Provide the address for Husseini Suspension Bridge.
+    - What's the geographical location of Rakaposhi Base Camp?
+    - Where is Shigar River Retreat located?
+    - Tell me the location of Karakoram International University.
+    - What's the address for Baltit Fort in Hunza?
+    - Where can I find the Singal Valley on the map?
+    - Provide the location of K2 in Gilgit-Baltistan.
+    - What's the geographical location of Shangrila Resort in Skardu?
+    - Where is Upper Kachura Lake situated?
+    - Can you give me directions to Karakoram Highway?
+    - Tell me the location of Phunder Valley in Ghizer.
+    - Where can I find the Satpara Lake Resort on the map?
+    - Provide the address for Shigar Fort Residence.
+    - What's the geographical location of Sheosar Lake?
+    - Where is Skardu Airport situated in Gilgit-Baltistan?
+    - Tell me the location of the Old Silk Route.
+    - What's the address for Manthal Buddha Rock?
+    - Where can I find Turtuk Village on the map?
+    - Provide the location of Naltar Valley Ski Resort.
+    - What's the geographical location of Skardu City?
+    - Where is K2 View Point located?
+    - Can you give me directions to Baltit Fort in Hunza?
+    - Tell me the location of Hopper Glacier.
+    - Where can I find the Shigar River on the map?
+    - Provide the address for the Siachen Base Camp.
+    - What's the geographical location of Passu Cones?
+    - Where is Khaplu Palace situated in Gilgit-Baltistan?
+    - Tell me the location of the Katpana Desert.
+    - What's the address for Karakoram Lodge in Skardu?
+    - Where can I find the Shigar Fort Mosque on the map?
+    - Provide the location of Shangrila Resort in Skardu.
+    - What's the geographical location of Fairy Meadows?
+    - Where is Skardu Airport located in Gilgit-Baltistan?
+    - Tell me the location of the Blind Lake in Shigar.
+    - What's the address for the Shigar River Retreat
+    - Where is Rakaposhi located?
+    - What is the location of Khunjerab Pass?
+    - Tell me the location of Karimabad.
+    - Where is Skardu situated?
+    - What is the location of Shigar Fort?
+    - Where can I find Tashkurgan?
+    - What is the location of Shandur Top?
+    - Tell me where Naltar Valley is.
+    - Where is Sheosar Lake located?
+    - What is the location of Khaplu?
+    - Tell me where Nanga Parbat is.
+    - Where is Kachura Lake situated?
+    - What is the location of Passu Cones?
+    - Tell me where Shangrila Resort is.
+    - Where is Attabad Lake located?
+    - What is the location of Hunza Valley?
+    - Tell me where Baltit Fort is.
+    - Where is Fairy Meadows situated?
+    - What is the location of Satpara Lake?
+    - Tell me where Deosai National Park is.
+    - Where is Phander Valley located?
+    - What is the location of Rawalakot?
+    - Tell me where Rama Lake is.
+    - Where is Gupis Valley situated?
+    - What is the location of Nagar Valley?
+    - Tell me where Shangrila Lake is.
+    - Where is Borith Lake located?
+    - What is the location of K2 Base Camp?
+    - Tell me where Bara Pani is.
+    - Where is Karambar Lake situated?
+    - What is the location of Boroghil Valley?
+    - Tell me where Thalley Valley is.
+    - Where is Garam Chashma located?
+    - What is the location of Chillinji Pass?
+    - Tell me where Hoper Glacier is.
+    - Where is Hussaini Bridge situated?
+    - What is the location of Kalash Valley?
+    - Tell me where Broghil Valley is.
+    - Where is Chitral located?
+    - What is the location of Shandur Polo Ground?
+    - Tell me where Chashme Shahi is.
+    - Where is Thakot Bridge located?
+    - What is the location of Gilgit Serena Hotel?
+    - Tell me where Fort of Shalman is.
+    - Where is Shandur Lake located?
+    - What is the location of Shandur Pass?
+    - Tell me where Kalash Festival is.
+    - Where is Rumbur Valley situated?
+    - What is the location of Bumburet Valley?
+    - Tell me where Barah Valley is.
+    - Where is Keris Valley View Point located?
+    - What is the location of Aastana Mir Mukhtar Keris?
+    - Tell me where Yabgo palace Keris (Lake) is.
+    - Where is Jerba So Keris located?
+    - What is the location of Khashal Agri Tourism Park Ghowari?
+    - Tell me where Dongsa Rock View Point Kuro is.
+    - Where is Balghar Ranga situated?
+    - What is the location of Crystal Lake Soga?
+    - Tell me where Saling Spangtoq (Trout Fish) is.
+    - Where is Chaqchan Mosque Khaplu located?
+    - What is the location of Yabgo Palace Khaplu(Sereena Palace)?
+    - Tell me where Thoqsi Khar Khaplu is.
+    - Where is Haldi Coneas situated?
+    - What is the location of Hushe Valley (K2 Gateway)?
+    - Tell me where Machulu Valley is.
+    - Where is Mashbrum View Point located?
+    - What is the location of K2 View Point Machulo La?
+    - Tell me where Khamush Waterfall is.
+    - Where is Khamush Waterfall Trail situated?
+    - What is the location of Khamush Waterfall Pool?
+    - Tell me where The Shigar View Point is.
+    - Where is The Blind Lake Shigar located?
+    - What is the location of The River of Shigar?
+    - Tell me where Shigar Fort, The Palace of Rocks is.
+    - Where is The Ambrique Mosque Shigar situated?
+    - What is the location of Hashupi Bagh Shigar, The Apple Garden?
+    - Tell me where Baltoro Glaciers is.
+    - Where is K2 Base Camp located?
+    - What is the location of Balghar Broq?
+    - Tell me where Thalley Valley is?
+- intent: recommendation
+  examples: |
+    - Recommend me some beautiful places to visit in Khaplu.
+    - Can you suggest picturesque locations in Skardu?
+    - I'm looking for recommendations on stunning sites in Gilgit.
+    - What are some of the most beautiful places in Hunza?
+    - Recommend me scenic spots to explore in Ghanche.
+    - Can you suggest breathtaking views in Shigar?
+    - I'm interested in discovering beautiful places in Ghizer. Any recommendations?
+    - What are the must-visit places for nature lovers in Astore?
+    - Can you recommend picturesque locations in Diamer?
+    - I'm planning to visit Nagar. Any suggestions for beautiful places?
+    - What are some hidden gems in Baltistan that offer amazing views?
+    - Recommend me some off-the-beaten-path places with natural beauty in Gilgit-Baltistan.
+    - Can you suggest beautiful places for photography enthusiasts in Skardu?
+    - I'm looking for recommendations on serene locations in Kharmang.
+    - What are the most beautiful valleys to explore in Gilgit-Baltistan?
+    - Recommend me some tranquil lakes and landscapes in the region.
+    - Can you suggest scenic spots for a peaceful getaway in Hunza Valley?
+    - I'm interested in discovering the beauty of Shigar Valley. Any recommendations?
+    - What are the top-rated viewpoints with breathtaking panoramas in Gilgit-Baltistan?
+    - Recommend me some charming places to visit in the historical city of Shigar.
+    - Can you suggest beautiful places with cultural significance in Skardu?
+    - I'm looking for recommendations on places that offer a blend of history and natural beauty in Ghizer.
+    - What are the iconic landmarks and beautiful landscapes in Astore?
+    - Recommend me some lesser-known places with stunning views in Diamer.
+    - Can you suggest beautiful places for a memorable vacation in Nagar Valley?
+    - I'm planning to explore the untouched beauty of Ghanche. Any suggestions?
+    - What are the best spots for enjoying the beauty of nature in Gilgit?
+    - Recommend me some enchanting places to visit in Hunza Valley.
+    - Can you suggest beautiful places that capture the essence of the region in Khaplu?
+    - I'm looking for recommendations on places with rich cultural heritage and natural beauty in Baltistan.
+    - What are the must-visit locations for a scenic road trip in Gilgit-Baltistan?
+    - Recommend me some beautiful places that are less crowded and offer tranquility in Skardu.
+    - Can you recommend some must-visit places in Gilgit-Baltistan?
+    - What are your recommendations for cultural experiences in the region?
+    - Can you suggest some adventure activities for tourists?
+    - What are the recommended historical sites to explore?
+    - Can you recommend some wildlife sanctuaries and reserves?
+    - What adventure sports do you recommend for thrill-seekers?
+    - Can you suggest cultural events and festivals to attend?
+    - What outdoor recreation areas would you recommend for families?
+    - Can you recommend historical landmarks with significant importance?
+    - What are your recommendations for religious places to visit?
+    - Can you suggest wildlife viewing spots for nature enthusiasts?
+    - What adventure tours would you recommend for a memorable experience?
+    - Can you recommend cultural attractions with unique features?
+    - What historical periods and events do you recommend exploring?
+    - Can you suggest wildlife conservation efforts to support?
+    - What adventure travel experiences do you recommend?
+    - Can you recommend cultural practices that are unique to the region?
+    - What historical figures and categories are recommended for study?
+    - Can you suggest religious rituals and practices to learn about?
+    - What wildlife photography categories and locations do you recommend?
+    - Can you recommend adventure destinations for an exciting trip?
+    - What cultural traditions and practices are recommended for tourists?
+    - Can you suggest historical sites and categories that are a must-visit?
+    - What wildlife habitats and conservation categories do you recommend?
+    - Can you recommend adventure travel packages for a memorable journey?
+    - What cultural events and categories are recommended for celebration?
+    - Can you suggest historical places and categories to explore?
+    - What religious practices and categories do you recommend learning about?
+    - Can you recommend wildlife species and categories to observe?
+    - What adventure tourism and categories do you recommend exploring?
+    - Can you suggest cultural festivals and categories to experience?
+    - What outdoor adventure sports categories do you recommend trying?
+    - Can you recommend historical landmarks and categories of significance?
+    - What religious festivals and categories do you recommend attending?
+    - Can you suggest wildlife conservation categories to support?
+    - What adventure trekking categories and locations do you recommend?
+    - Can you recommend cultural heritage and categories to explore?
+    - What outdoor sports and adventure categories do you recommend trying?
+    - Can you suggest historical events and categories to learn about?
+    - What religious places and categories do you recommend visiting?
+    - Can you recommend wildlife species and categories for observation?
+    - What adventure travel experiences and categories do you recommend?
+    - Can you suggest cultural diversity and categories to experience?
+    - What historical figures and categories are recommended for exploration?
+    - Can you recommend religious rituals and categories to learn about?
+    - What wildlife photography categories and locations do you recommend?
+    - Can you suggest adventure destinations and categories for exploration?
+    - What cultural practices and categories are recommended for understanding?
+    - Can you recommend historical periods and categories to study?
+    - What religious beliefs and categories do you recommend exploring?
+    - Can you suggest wildlife viewing categories for nature enthusiasts?
+    - What adventure trips and categories do you recommend for a thrilling experience?
+    - Can you recommend cultural traditions and categories to experience?
+    - What historical sites and categories do you recommend visiting?
+    - Can you suggest religious customs and categories to learn about?
+    - What wildlife habitats and categories do you recommend exploring?
+    - Can you recommend adventure travel packages and categories for a memorable trip?
+    - What cultural events and categories are recommended for participation?
+    - Can you suggest historical places and categories to explore?
+    - What religious practices and categories do you recommend learning about?
+    - Can you recommend wildlife species and categories for observation?
+    - What adventure tourism and categories do you recommend exploring?
+    - Can you suggest cultural festivals and categories to experience?
+    - What outdoor adventure sports categories do you recommend trying?
+    - Can you recommend historical landmarks and categories of significance?
+    - What religious festivals and categories do you recommend attending?
+    - Can you suggest wildlife conservation categories to support?
+    - What adventure trekking categories and locations do you recommend?
+    - Can you recommend cultural heritage and categories to explore?
+    - What outdoor sports and adventure categories do you recommend trying?
+    - Can you suggest historical events and categories to learn about?
+    - What religious places and categories do you recommend visiting?
+    - Can you recommend wildlife species and categories for observation?
+    - What adventure travel experiences and categories do you recommend?
+    - Can you suggest cultural diversity and categories to experience?
+    - What historical figures and categories are recommended for exploration?
+    - Can you recommend religious rituals and categories to learn about?
+    - What wildlife photography categories and locations do you recommend?
+    - Can you suggest adventure destinations and categories for exploration?
+    - What cultural practices and categories are recommended for understanding?
+    - Can you recommend historical periods and categories to study?
+    - What religious beliefs and categories do you recommend exploring?
+    - Can you suggest wildlife viewing categories for nature enthusiasts?
+    - What adventure trips and categories do you recommend for a thrilling experience?
+    - Can you recommend cultural traditions and categories to experience?
+    - What historical sites and categories do you recommend visiting?
+    - Can you suggest religious customs and categories to learn about?
+    - What wildlife habitats and categories do you recommend exploring?
+    - Can you recommend adventure travel packages and categories for a memorable trip?
+    - What cultural events and categories are recommended for participation?
+    - Can you suggest historical places and categories to explore?
+    - What religious practices and categories do you recommend learning about?
+    - Can you recommend wildlife species and categories for observation?
+    - What adventure tourism and categories do you recommend exploring?
+    - Can you suggest cultural festivals and categories to experience?
+    - What outdoor adventure sports categories do you recommend trying?
+    - Can you recommend historical landmarks and categories of significance?
+    - What religious festivals and categories do you recommend attending?
+    - Can you suggest wildlife conservation categories to support?
+    - What adventure trekking categories and locations do you recommend?
+    - Can you recommend cultural heritage and categories to explore?
+    - What outdoor sports and adventure categories do you recommend trying?
+    - Can you suggest historical events and categories to learn about?
+    - What religious places and categories do you recommend visiting?
+    - Can you recommend wildlife species and categories for observation?
+    - What adventure travel experiences and categories do you recommend?
+    - Can you suggest cultural diversity and categories to experience?
+    - What historical figures and categories are recommended for exploration?
+    - Can you recommend religious rituals and categories to learn about?
+    - What wildlife photography categories and locations do you recommend?
+    - Can you suggest adventure destinations and categories for exploration?
+    - What cultural practices and categories are recommended for understanding?
+    - Can you recommend historical periods and categories to study?
+    - What religious beliefs and categories do you recommend exploring?
+    - Can you suggest wildlife viewing categories for nature enthusiasts?
+    - What adventure trips and categories do you recommend for a thrilling experience?
+    - Can you recommend cultural traditions and categories to experience?
+    - What historical sites and categories do you recommend visiting?
+    - Can you suggest religious customs and categories to learn about?
+    - What wildlife habitats and categories do you recommend exploring?
+    - Can you recommend adventure travel packages and categories for a memorable trip?
+    - What cultural events and categories are recommended for participation
+- intent: mood_happy
+  examples: |
+      - I'm feeling great!
+      - This makes me happy
+      - I'm in a good mood
+      - I feel fantastic
+- intent: mood_sad
+  examples: |
+      - I'm feeling sad
+      - This is making me upset
+      - I'm not in a good mood
+      - I feel down
+- intent: bot_challenge
+  examples: |
+      - Are you a bot?
+      - Is this a computer?
+      - Are you human?
+      - Can you pass the Turing test?
+- intent: happy
+  examples: |
+    - happy
+    - i am happy today
+- intent: mood_unhappy
+  examples: |
+    - i am unhappy
+    - sad
+    - disapointed you
+    - bad
+
